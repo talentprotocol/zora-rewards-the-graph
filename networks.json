@@ -1,0 +1,8 @@
+{
+  "base": {
+    "ProtocolRewards": {
+      "address": "0x7777777f279eba3d3ad8f4e708545291a6fdba8b",
+      "startBlock": 2336418
+    }
+  }
+}
