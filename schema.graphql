@@ -1,47 +1,13 @@
-type Deposit @entity(immutable: true) {
-  id: Bytes!
-  from: Bytes! # address
-  to: Bytes! # address
-  reason: Bytes! # bytes4
-  amount: BigInt! # uint256
-  comment: String! # string
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
-  transactionHash: Bytes!
-}
-
-type EIP712DomainChanged @entity(immutable: true) {
-  id: Bytes!
-
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
-  transactionHash: Bytes!
-}
-
-type RewardsDeposit @entity(immutable: true) {
-  id: Bytes!
-  creator: Bytes! # address
-  createReferral: Bytes! # address
-  mintReferral: Bytes! # address
-  firstMinter: Bytes! # address
-  zora: Bytes! # address
-  from: Bytes! # address
-  creatorReward: BigInt! # uint256
-  createReferralReward: BigInt! # uint256
-  mintReferralReward: BigInt! # uint256
-  firstMinterReward: BigInt! # uint256
-  zoraReward: BigInt! # uint256
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
-  transactionHash: Bytes!
-}
-
-type Withdraw @entity(immutable: true) {
-  id: Bytes!
-  from: Bytes! # address
-  to: Bytes! # address
-  amount: BigInt! # uint256
-  blockNumber: BigInt!
-  blockTimestamp: BigInt!
-  transactionHash: Bytes!
+type User @entity {
+  id: ID! # address
+  rewardsTotal: BigInt! # uint256
+  rewardsClaimed: BigInt! # uint256
+  creatorRewardsTotal: BigInt! # uint256
+  createReferralRewardsTotal: BigInt! # uint256
+  mintReferralRewardsTotal: BigInt! # uint256
+  firstMinterRewardsTotal: BigInt! # uint256
+  zoraRewardsTotal: BigInt! # uint256
+  createdAt: BigInt! # uint256
+  updatedAt: BigInt! # uint256
+  source: String! # tracks which contract the event came from
 }
