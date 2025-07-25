@@ -1,7 +1,7 @@
 type User @entity {
   id: ID! # address
+  address: String! # address
   rewardsTotal: BigInt! # uint256
-  rewardsClaimed: BigInt! # uint256
   creatorRewardsTotal: BigInt! # uint256
   createReferralRewardsTotal: BigInt! # uint256
   mintReferralRewardsTotal: BigInt! # uint256
@@ -10,4 +10,5 @@ type User @entity {
   createdAt: BigInt! # uint256
   updatedAt: BigInt! # uint256
   source: String! # tracks which contract the event came from
+  origin: String! # tracks if the reward is from pods or zora
 }

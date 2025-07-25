@@ -10,49 +10,37 @@ dataSources:
     source:
       address: "0x7777777A456fF23D9b6851184472c08FBDa73e32"
       abi: ProtocolRewards
-      startBlock: 107718410
+      startBlock: 2123378
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
-        - Deposit
         - RewardsDeposit
-        - Withdraw
       abis:
         - name: ProtocolRewards
           file: ./abis/ProtocolRewards.json
       eventHandlers:
-        - event: Deposit(indexed address,indexed address,indexed bytes4,uint256,string)
-          handler: handleDeposit
         - event: RewardsDeposit(indexed address,indexed address,indexed address,address,address,address,uint256,uint256,uint256,uint256,uint256)
           handler: handleRewardsDeposit
-        - event: Withdraw(indexed address,indexed address,uint256)
-          handler: handleWithdraw
       file: ./src/protocol-rewards.ts
   - kind: ethereum
     name: ProtocolRewards2
     network: base
     source:
-      address: "0x7777777f279eba3d3ad8f4e708545291a6fdba8b"
+      address: "0x7777777F279eba3d3Ad8F4E708545291A6fDBA8B"
       abi: ProtocolRewards
-      startBlock: 2384107
+      startBlock: 2336418
     mapping:
       kind: ethereum/events
       apiVersion: 0.0.7
       language: wasm/assemblyscript
       entities:
-        - Deposit
         - RewardsDeposit
-        - Withdraw
       abis:
         - name: ProtocolRewards
           file: ./abis/ProtocolRewards.json
       eventHandlers:
-        - event: Deposit(indexed address,indexed address,indexed bytes4,uint256,string)
-          handler: handleDeposit
         - event: RewardsDeposit(indexed address,indexed address,indexed address,address,address,address,uint256,uint256,uint256,uint256,uint256)
           handler: handleRewardsDeposit
-        - event: Withdraw(indexed address,indexed address,uint256)
-          handler: handleWithdraw
       file: ./src/protocol-rewards.ts

@@ -1,8 +1,48 @@
 {
   "base": {
-    "ProtocolRewards": {
-      "address": "0x7777777f279eba3d3ad8f4e708545291a6fdba8b",
+    "ProtocolRewardsV1": {
+      "address": "0x7777777A456fF23D9b6851184472c08FBDa73e32",
+      "startBlock": 2123378
+    },
+    "ProtocolRewardsV2": {
+      "address": "0x7777777F279eba3d3Ad8F4E708545291A6fDBA8B",
       "startBlock": 2336418
+    }
+  },
+  "optimism": {
+    "ProtocolRewardsV1": {
+      "address": "0x7777777A456fF23D9b6851184472c08FBDa73e32",
+      "startBlock": 107718410
+    },
+    "ProtocolRewardsV2": {
+      "address": "0x7777777F279eba3d3Ad8F4E708545291A6fDBA8B",
+      "startBlock": 107931668
+    }
+  },
+  "zora": {
+    "ProtocolRewardsV1": {
+      "address": "0x7777777A456fF23D9b6851184472c08FBDa73e32",
+      "startBlock": 2171044
+    },
+    "ProtocolRewardsV2": {
+      "address": "0x7777777F279eba3d3Ad8F4E708545291A6fDBA8B",
+      "startBlock": 2384107
+    }
+  },
+  "arbitrum": {
+    "ProtocolRewardsV1": {
+      "address": "0x7777777F279eba3d3Ad8F4E708545291A6fDBA8B",
+      "startBlock": 169101021
+    }
+  },
+  "mainnet": {
+    "ProtocolRewardsV1": {
+      "address": "0x7777777A456fF23D9b6851184472c08FBDa73e32",
+      "startBlock": 17831976
+    },
+    "ProtocolRewardsV2": {
+      "address": "0x7777777F279eba3d3Ad8F4E708545291A6fDBA8B",
+      "startBlock": 17867249
     }
   }
 }
